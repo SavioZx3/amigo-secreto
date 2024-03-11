@@ -5,7 +5,12 @@ let sorteados = document.getElementById("lista-sorteio");
 
 function adicionar (){
     if(nomeAmigo.value === ''){
-        alert('Digite o nome do amigo para adicionar');
+        alert('Imforme o nome do amigo');
+        return;
+    }
+
+    if (amigos.includes(nomeAmigo.value)) {
+        alert('Nome já adicionado!');
         return;
     }
     
